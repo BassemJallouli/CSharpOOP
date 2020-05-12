@@ -9,6 +9,14 @@ namespace painting
         private string medium;
         private int year;
 
+        public virtual void copyright() {
+            Console.WriteLine("Verification copyright");
+        }
+
+        public virtual void description() {
+            Console.WriteLine("description of painting");
+        }
+
         public string Proartist {
             get {
                 return artist;
@@ -52,6 +60,14 @@ namespace painting
        public string name = "Starry Night";
        public string medium = "AA";
        public string year = 1889;
+
+       public override void copyright() {
+            Console.WriteLine("Verification copyright");
+        }
+
+        public void check() {
+            Console.WriteLine("Verification origin");
+        }
 
    }
 
